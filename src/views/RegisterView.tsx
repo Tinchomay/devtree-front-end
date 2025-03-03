@@ -21,7 +21,7 @@ export default function RegisterView() {
   const initialValues = {
     name  : '',
     email : '',
-    handle : location.state.handle ? location.state.handle : '',
+    handle: location.state && location.state.handle ? location.state.handle : '',
     password : '',
     password_confirmation: ''
   };
