@@ -5,8 +5,8 @@ import { toast } from "sonner";
 
 export default function AdminNavigation() {
     const navigate = useNavigate();
+    const queryClient = useQueryClient();
     const closeSession = () => {
-        const queryClient = useQueryClient();
         //removemos el token
         localStorage.removeItem('AUTH_TOKEN');
         //invalidamos y no se puede hacer el refetch porque ya no hay toquen
